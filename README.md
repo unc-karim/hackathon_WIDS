@@ -1,10 +1,10 @@
-# 🌊 Enhanced Human Detection in Flood Images
+# Enhanced Human Detection in Flood Images
 
 ### Using YOLOv11 with Advanced Training and Evaluation Strategies
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project focuses on detecting **humans in flood environments** using **YOLOv11**, the latest generation of real-time object detection models.
 The main goal is to assist **disaster response teams** in identifying people stranded during floods through automated image analysis.
@@ -13,18 +13,18 @@ We enhanced the standard YOLO workflow with improved **data preprocessing**, **a
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-* ✅ YOLOv11-based human detection for flood imagery
-* 🌐 Automatic dataset download and preparation (C2A Flood Dataset)
-* 🧠 Advanced augmentation for flood scenarios
-* 📊 Comprehensive evaluation metrics (Precision, Recall, mAP@0.5, mAP@0.5:0.95, F1-score)
-* 🖼️ Visualizations for training curves and predictions
-* 💾 Exported model in both PyTorch (`.pt`) and ONNX formats for deployment
+* YOLOv11-based human detection for flood imagery
+* Automatic dataset download and preparation (C2A Flood Dataset)
+* Advanced augmentation for flood scenarios
+* Comprehensive evaluation metrics (Precision, Recall, mAP@0.5, mAP@0.5:0.95, F1-score)
+* Visualizations for training curves and predictions
+* Exported model in both PyTorch (`.pt`) and ONNX formats for deployment
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **Dataset:** [C2A Flood Dataset](https://www.kaggle.com/datasets/rgbnihal/c2a-dataset)
 
@@ -38,7 +38,7 @@ Each image has a YOLO-style `.txt` annotation file.
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone this repository
 
@@ -59,7 +59,7 @@ print(f"Dataset downloaded to: {path}")
 
 ---
 
-## 🧠 Model Training
+## Model Training
 
 We trained **YOLOv11s** (small variant) for efficiency and speed on the filtered dataset.
 
@@ -86,7 +86,7 @@ results = model.train(
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 After training, our best model achieved:
 
@@ -102,7 +102,7 @@ These results show strong detection accuracy, even in complex flood scenarios.
 
 ---
 
-## 🖼️ Visual Results
+## Visual Results
 
 The project includes:
 
@@ -119,14 +119,14 @@ results.show()
 
 ---
 
-## 💾 Model Export
+## Model Export
 
 The best-performing model is saved in multiple formats for deployment:
 
 | Format     | File                      | Description                           |
 | ---------- | ------------------------- | ------------------------------------- |
-| 🧠 PyTorch | `flood_yolov11_best.pt`   | Fine-tuning and retraining            |
-| ⚙️ ONNX    | `flood_yolov11_best.onnx` | Real-time inference / edge deployment |
+|  PyTorch | `flood_yolov11_best.pt`   | Fine-tuning and retraining            |
+|  ONNX    | `flood_yolov11_best.onnx` | Real-time inference / edge deployment |
 
 Export command:
 
@@ -136,7 +136,7 @@ best_model.export(format='onnx', imgsz=1280, dynamic=True)
 
 ---
 
-## 🔬 Confidence Threshold Analysis
+## Confidence Threshold Analysis
 
 We tested multiple confidence thresholds and found:
 
@@ -147,16 +147,16 @@ This threshold offers the best trade-off between precision and recall.
 
 ---
 
-## 🧭 Next Steps
+## Next Steps
 
-* 🧪 Test on real-world flood videos
-* 📹 Integrate into drones or surveillance systems
-* 🌍 Extend to detect debris, vehicles, and other hazards
-* ⚡ Deploy using TensorRT or ONNX Runtime for real-time performance
+* Test on real-world flood videos
+* Integrate into drones or surveillance systems
+* Extend to detect debris, vehicles, and other hazards
+* Deploy using TensorRT or ONNX Runtime for real-time performance
 
 ---
 
-## 👩‍💻 Team & Contributions
+## Team & Contributions
 
 **Project Title:** Enhanced Human Detection in Flood Images
 
