@@ -162,7 +162,7 @@ This threshold offers the best trade-off between precision and recall.
 
 **Team Members:**
 
-Karim Abdallah
-Hassan Hashem - Hussein Mdaihly - Samer Barakat - Carl Wakim
+Karim Abdallah - Hassan Hashem - Hussein Mdaihly - Samer Barakat - Carl Wakim
 
+We also used claude ai, and chatgpt5 for writing code, and brainstorming.
 ---
