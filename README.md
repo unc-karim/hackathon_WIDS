@@ -43,7 +43,7 @@ Each image has a YOLO-style `.txt` annotation file.
 ### 1. Clone this repository
 
 
-git clone https://github.com/yourusername/enhanced-human-detection-flood.git
+git clone https://github.com/unc-karim/hackathon_WIDS
 cd enhanced-human-detection-flood
 
 
